@@ -19,7 +19,7 @@ If not already created, the program will create a folder for its plots.
 ### Visualization
 The program will both output a video with contours around the particles and a plot for some random particles. 
 
-To number of particles plotted using matplotlib is given by variable > num_plotted_particles
+To number of particles plotted using matplotlib is given by variable num_plotted_particles
 
 ## Installation
 **Requirements**
