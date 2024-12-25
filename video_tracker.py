@@ -19,7 +19,7 @@ while True:
 
     threshold = cv.adaptiveThreshold(
         image, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C,
-        cv.THRESH_BINARY_INV, 5, 3
+        cv.THRESH_BINARY_INV, 7, 5
     )
 
     kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
@@ -35,7 +35,7 @@ while True:
     small_objects = []
     for contour in contours:
         area = cv.contourArea(contour)
-        if 2 < area < 500:
+        if 5 < area < 500:
             small_objects.append(contour)
 
     output_image = cv.cvtColor(image, cv.COLOR_GRAY2BGR)
