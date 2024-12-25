@@ -11,12 +11,12 @@ The program will both output a video with contours around the particles and a pl
 If not already created, the program will create a folder for its plots.
 
 **Filters**
-> - cvtColor: We use this filter to turn the video into grayscale (BGR2GRAY)
-> - GaussianBlur: Smoothen the image to reduce noise
-> - bilateralFilter: Smoothen the image, while conserving edges. (removed)
-> - normalize: Scale the data to a specific range. Might be needed for machine learning and coming apllications. (removed)
-> - Threshold: Adaptive Gaussian Thresholding to convert image to binary, and MORPH_ELLIPSE to enhance or supress features.
-> - Contours: Gets only the outer most points, and collapses lines to save computation.
+- > cvtColor: We use this filter to turn the video into grayscale (BGR2GRAY)
+- > GaussianBlur: Smoothen the image to reduce noise
+- > bilateralFilter: Smoothen the image, while conserving edges. (removed)
+- > normalize: Scale the data to a specific range. Might be needed for machine learning and coming apllications. (removed)
+- > Threshold: Adaptive Gaussian Thresholding to convert image to binary, and MORPH_ELLIPSE to enhance or supress features.
+- > Contours: Gets only the outer most points, and collapses lines to save computation.
 
 ## Installation
 **Requirements**
